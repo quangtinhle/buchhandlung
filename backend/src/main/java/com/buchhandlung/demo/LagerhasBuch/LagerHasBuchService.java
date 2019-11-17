@@ -2,8 +2,8 @@ package com.buchhandlung.demo.LagerhasBuch;
 
 import com.buchhandlung.demo.Lager.Lager;
 import com.buchhandlung.demo.Lager.LagerService;
-import com.buchhandlung.demo.buchhandlung.Buch;
-import com.buchhandlung.demo.buchhandlung.BuchService;
+import com.buchhandlung.demo.Buch.Buch;
+import com.buchhandlung.demo.Buch.BuchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

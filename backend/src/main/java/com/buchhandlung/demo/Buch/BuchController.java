@@ -1,4 +1,4 @@
-package com.buchhandlung.demo.buchhandlung;
+package com.buchhandlung.demo.Buch;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

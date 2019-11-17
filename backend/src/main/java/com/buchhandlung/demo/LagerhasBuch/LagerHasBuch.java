@@ -1,7 +1,7 @@
 package com.buchhandlung.demo.LagerhasBuch;
 
 import com.buchhandlung.demo.Lager.Lager;
-import com.buchhandlung.demo.buchhandlung.Buch;
+import com.buchhandlung.demo.Buch.Buch;
 
 import javax.persistence.*;
 

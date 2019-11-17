@@ -2,7 +2,7 @@ package com.buchhandlung.demo.Warenkorb;
 
 import com.buchhandlung.demo.Kunde.Kunde;
 import com.buchhandlung.demo.Lager.Lager;
-import com.buchhandlung.demo.buchhandlung.Buch;
+import com.buchhandlung.demo.Buch.Buch;
 
 import javax.persistence.*;
 

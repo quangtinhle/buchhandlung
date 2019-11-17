@@ -1,4 +1,4 @@
-package com.buchhandlung.demo.buchhandlung;
+package com.buchhandlung.demo.Buch;
 
 
 import javax.persistence.Entity;

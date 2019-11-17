@@ -1,7 +1,5 @@
 package com.buchhandlung.demo.Kunde;
 
-import com.buchhandlung.demo.buchhandlung.Buch;
-import com.buchhandlung.demo.buchhandlung.BuchRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
