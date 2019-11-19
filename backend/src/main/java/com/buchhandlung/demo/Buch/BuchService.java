@@ -27,7 +27,7 @@ public class BuchService {
 
         buchfromDB.setName(updatedBuch.getName());
         buchfromDB.setPreis(updatedBuch.getPreis());
-        buchfromDB.setAutor(updatedBuch.getAutor());
+        buchfromDB.setAuthor(updatedBuch.getAuthor());
 
         return buchRepo.save(buchfromDB);
     }
