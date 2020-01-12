@@ -1,7 +1,10 @@
 package com.buchhandlung.demo.Warenkorb;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class WarenkorbController {
@@ -9,24 +12,15 @@ public class WarenkorbController {
     @Autowired
     private WarenkorbService warenkorbService;
 
+
     @GetMapping("/warenkorb/{warenkorbId}")
-    public Warenkorb getWarenkorb(@PathVariable int id) {
-        return this.warenkorbService.getWarenkorb(id);
+    public Warenkorb getWarenkorb(@PathVariable int warenkorbId) {
+        return this.warenkorbService.getWarenkorb(warenkorbId);
     }
 
-    @PostMapping("/warenkorb")
-    public Warenkorb createWarenkorb(@RequestBody Warenkorb warenkorb) {
-        return this.warenkorbService.createWarenkorb(warenkorb);
-    }
-
-    @PutMapping("/warenkorb")
-    public Warenkorb updateWarenkorb() {
-        //TODO
-        return null;
-    }
-
-    @DeleteMapping("/warenkorb/{warenkorbId}")
-    public Warenkorb deleteWarenkorb(@PathVariable int id) {
-        return this.warenkorbService.deleteWarenkorb(id);
+    @PostMapping("/warenkorb/{anzahl}/{buchId}/{kundeId}/{lagerId}")
+    public Warenkorb createWarenkorb(@PathVariable int anzahl, @PathVariable int buchId, @PathVariable int kundeId, @PathVariable int lagerId) {
+        return this.warenkorbService.createWarenkorb(anzahl, buchId, kundeId, lagerId);
     }
 }
+

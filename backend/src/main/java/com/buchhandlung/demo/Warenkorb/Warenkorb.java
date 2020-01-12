@@ -1,28 +1,28 @@
 package com.buchhandlung.demo.Warenkorb;
 
+import com.buchhandlung.demo.Buch.Buch;
 import com.buchhandlung.demo.Kunde.Kunde;
 import com.buchhandlung.demo.Lager.Lager;
-import com.buchhandlung.demo.Buch.Buch;
+
 
 import javax.persistence.*;
 
 @Entity
 public class Warenkorb {
-
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY )
     private int id;
 
     private int anzahl;
-
-    @ManyToOne
-    private Kunde kunde;
 
     @ManyToOne
     private Buch buch;
 
     @ManyToOne
     private Lager lager;
+
+    @ManyToOne
+    private Kunde kunde;
 
     public int getId() {
         return id;
@@ -40,14 +40,6 @@ public class Warenkorb {
         this.anzahl = anzahl;
     }
 
-    public Kunde getKunde() {
-        return kunde;
-    }
-
-    public void setKunde(Kunde kunde) {
-        this.kunde = kunde;
-    }
-
     public Buch getBuch() {
         return buch;
     }
@@ -62,5 +54,13 @@ public class Warenkorb {
 
     public void setLager(Lager lager) {
         this.lager = lager;
+    }
+
+    public Kunde getKunde() {
+        return kunde;
+    }
+
+    public void setKunde(Kunde kunde) {
+        this.kunde = kunde;
     }
 }
