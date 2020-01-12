@@ -14,7 +14,17 @@ public class Buch {
 
     private String name;
     private double preis;
-    private String autor;
+    private String author;
+
+    public Buch() {
+    }
+
+    public Buch(int id, String name, double preis, String author) {
+        this.id = id;
+        this.name = name;
+        this.preis = preis;
+        this.author = author;
+    }
 
     public int getId() {
         return id;
@@ -40,11 +50,11 @@ public class Buch {
         this.preis = preis;
     }
 
-    public String getAutor() {
-        return autor;
+    public String getAuthor() {
+        return author;
     }
 
-    public void setAutor(String autor) {
-        this.autor = autor;
+    public void setAuthor(String author) {
+        this.author = author;
     }
 }
