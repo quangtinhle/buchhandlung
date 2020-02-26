@@ -1,0 +1,11 @@
+<label>User Name</label>
+<input
+  type="text"
+  placeholder="dien ten nguoi dung"
+  (click)="clickHandler()"
+  (keydown)="keydownHandler($event)"
+  [(ngModel)]="firstName"
+  [disabled]="isDisabled"
+>
+
+<p>The Title is: {{ title }}</p>

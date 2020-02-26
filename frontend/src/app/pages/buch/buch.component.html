@@ -1,0 +1,5 @@
+<h2>All Books from the Store</h2>
+
+<p *ngFor="let buch of buchs">
+  {{ buch.id }} {{ buch.name | lowercase }} {{ buch.author }} {{ buch.preis | currency:'EUR'}}
+</p>
